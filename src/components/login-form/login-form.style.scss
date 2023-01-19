@@ -2,9 +2,31 @@
   background-color: #ffffff;
   font-weight: 400;
   font-size: 1.6rem;
-  width: 326px;
-  height: 325px;
-  margin-top: 4em;
+  max-width: 90%;
+  width: 436px;
+  height: auto;
+  margin-top: 3.8em;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.info {
+  font-family: HelveticaNeueMediumExt;
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.noAccountInfo {
+  margin-top: 2em;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.noAccountInfo span {
+  color: #5444f2;
+  cursor: pointer;
 }
 
 .container {
@@ -12,6 +34,63 @@
   flex-direction: column;
 }
 
+.container label {
+  margin-top: 2em;
+  color: #65717c;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.password {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.password a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #5444f2;
+}
+
+.passwordInput {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  top: 40%;
+  right: 16px;
+  cursor: pointer;
+  color: #c1c1c1;
+}
+
+.container input {
+  border: 0.5px solid #e1e1e1;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  margin-top: 0.5em;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+// login button
+
+.loginButton {
+  margin-top: 2em;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-sizing: border-box;
+  background-color: #5444f2;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
 @font-face {
   font-family: "HelveticaNeueMediumExt";
   src: url("../../assets/fonts/HelveticaMedExt.ttf");
