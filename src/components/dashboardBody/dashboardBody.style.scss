@@ -1,0 +1,20 @@
+.bodyContainer {
+  margin-left: 20em;
+  height: 100vh;
+  padding: 2.4em;
+}
+
+.leftRightSection {
+  display: flex;
+  gap: 3em;
+  width: 100%;
+}
+
+.leftSection {
+  flex-grow: 1;
+  border: 1px solid red;
+}
+.rightSection {
+  flex-basis: 41em;
+  border: 1px solid red;
+}

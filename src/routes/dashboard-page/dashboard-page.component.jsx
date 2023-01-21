@@ -1,3 +1,4 @@
+import DashboardBody from "../../components/dashboardBody/dashboardBody.component";
 import SideBar from "../../components/sideBar/sideBar";
 import TopBar from "../../components/topbar/topbar.component";
 
@@ -8,6 +9,7 @@ const DashboardPage = () => {
     <div className="dashboardPage">
       <TopBar />
       <SideBar />
+      <DashboardBody />
     </div>
   );
 };

@@ -1,15 +1,18 @@
 * {
   box-sizing: border-box;
   font-family: HelveticaNeueCyr, Helvetica, sans-serif;
+  transform: 0.3s ease;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   background-color: #f5f6fa;
+  overflow: hidden;
 }
 
 @font-face {

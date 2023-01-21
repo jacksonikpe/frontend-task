@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10em;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 0.5px solid #e1e1e1;
+  padding: 3em;
+  margin-bottom: 1.6em;
+}
+
+.infoButtom {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+.infoTop {
+  color: #65717c;
+  font-weight: bolder;
+}
+
+.cardInfo {
+  margin-left: 4em;
+}
