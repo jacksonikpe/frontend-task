@@ -2,6 +2,7 @@
   margin-left: 20em;
   height: 100vh;
   padding: 2.4em;
+  width: 100%;
 }
 
 .leftRightSection {
@@ -40,11 +41,8 @@
   }
 }
 
-// @media screen and (max-width: 568px) {
-//   .leftSection {
-//     flex-grow: 0;
-//   }
-//   .rightSection {
-//     flex-basis: auto;
-//   }
-// }
+@media screen and (max-width: 549px) {
+  .bodyContainer {
+    width: 50em;
+  }
+}
