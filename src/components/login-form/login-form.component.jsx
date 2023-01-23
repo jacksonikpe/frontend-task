@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
+import { Bars } from "react-loader-spinner";
 
 import { ReactComponent as Eye } from "../../assets/img/eye.svg";
 import "./login-form.style.scss";
 
 const LoginForm = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("jacksoncikpe@gmail.com");
+  const [password, setPassword] = useState("Hello123");
   const [loading, setLoading] = useState(false);
   const [redirect, setRedirect] = useState(false);
 
@@ -52,7 +53,19 @@ const LoginForm = () => {
           <Eye className="eye" />
         </div>
         <button type="submit" className="loginButton">
-          {loading ? "Loading..." : "Sign In"}
+          {loading ? (
+            <Bars
+              height="17"
+              width="17"
+              color="#fff"
+              ariaLabel="bars-loading"
+              wrapperStyle={{}}
+              wrapperClass=""
+              visible={true}
+            />
+          ) : (
+            "Log In"
+          )}
         </button>
       </div>
     </form>
