@@ -29,7 +29,7 @@ const ActivityFeed = () => {
       accountFeed = FirstBankFeed;
       break;
     default:
-      accountFeed = "Polaris";
+      accountFeed = PolarisFeed;
   }
   return (
     <div className="activityFeedContainer">
