@@ -29,13 +29,22 @@
     align-items: center;
     width: 100%;
   }
-}
-
-@media screen and (max-width: 568px) {
   .leftSection {
-    flex-grow: 0;
+    flex-grow: 1;
+    width: 100%;
   }
   .rightSection {
+    flex-grow: 1;
     flex-basis: auto;
+    width: 100%;
   }
 }
+
+// @media screen and (max-width: 568px) {
+//   .leftSection {
+//     flex-grow: 0;
+//   }
+//   .rightSection {
+//     flex-basis: auto;
+//   }
+// }
