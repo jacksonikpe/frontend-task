@@ -12,9 +12,30 @@
 
 .leftSection {
   flex-grow: 1;
-  border: 1px solid red;
 }
 .rightSection {
   flex-basis: 41em;
-  border: 1px solid red;
+}
+
+@media screen and (max-width: 1112px) {
+  .bodyContainer {
+    margin-left: 7em;
+  }
+}
+
+@media screen and (max-width: 1006px) {
+  .leftRightSection {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .leftSection {
+    flex-grow: 0;
+  }
+  .rightSection {
+    flex-basis: auto;
+  }
 }

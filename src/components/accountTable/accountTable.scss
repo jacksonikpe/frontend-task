@@ -1,0 +1,33 @@
+.table {
+  width: 100%;
+}
+
+.table th {
+  color: #65717c;
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+  text-align: start;
+}
+
+.table td {
+  font-weight: bolder;
+  font-size: 1.5;
+}
+
+tr:hover {
+  background-color: rgba(245, 246, 250, 0.7);
+  cursor: pointer;
+}
+
+.selected {
+  position: relative;
+  background-color: rgba(245, 246, 250, 0.7);
+  //   & ::before {
+  //     position: absolute;
+  //     content: "";
+  //     width: 8px;
+  //     height: 100%;
+  //     background: #5444f2;
+  //     margin-right: calc(1rem - 8px);
+  //   }
+}

@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2em;
+  margin-top: 7.5rem;
   width: 100%;
 }
 
@@ -25,6 +26,12 @@
   border: none;
   padding: 1.2rem 1.6rem;
   font-size: 1.6rem;
+  transition: all 0.5s ease;
+  transform: scale(1);
+
+  & :hover {
+    transform: scale(1.1);
+  }
 
   & span {
     margin-left: 0.3em;
@@ -44,4 +51,12 @@
 .rightBtn {
   background: #5444f2;
   color: #ffffff;
+  border: none;
+}
+
+@media screen and (max-width: 568px) {
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

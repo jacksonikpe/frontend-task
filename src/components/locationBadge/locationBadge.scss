@@ -1,0 +1,45 @@
+.badge {
+  width: 9em;
+  padding: 0.5rem;
+  padding-right: 0;
+  padding-left: 2.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.yellowLocation {
+  position: relative;
+  color: #ea8a15;
+  background: #fff6eb;
+  &::before {
+    position: absolute;
+    content: url("../../assets/img/orangeLocationBadge.svg");
+    top: 3px;
+    left: 5px;
+  }
+}
+
+.blueLocation {
+  position: relative;
+  color: #1a72f7;
+  background: #ebf5ff;
+  &::before {
+    position: absolute;
+    content: url("../../assets/img/blueLocationBadge.svg");
+    top: 3px;
+    left: 5px;
+  }
+}
+
+.purpleLocation {
+  position: relative;
+  color: #b01af7;
+  background: #f2ebff;
+  &::before {
+    position: absolute;
+    content: url("../../assets/img/purpleLocation.svg");
+    top: 3px;
+    left: 5px;
+  }
+}

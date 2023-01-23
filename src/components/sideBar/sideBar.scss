@@ -4,11 +4,12 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 0 0 2.4em 2.4em;
-  //   margin-top: 7.6em;
+  margin-top: 7.5em;
   height: 100%;
   width: 20em;
   background-color: #ffffff;
-  transition: all 300ms ease;
+  transition: all 0.3s ease;
+  z-index: 98;
 }
 
 //menu sidebar
@@ -24,6 +25,7 @@
   }
   & .menuText {
     margin-left: 0.3em;
+    margin-bottom: 0.4em;
     font-size: 1.6rem;
     color: #65717c;
     &:hover {
@@ -35,6 +37,11 @@
 .menuItem {
   display: flex;
   align-items: center;
+
+  & :hover {
+    background: #e6e6e6;
+    transform: scale(1.1);
+  }
 }
 
 .menuHeadering {
@@ -65,4 +72,23 @@
   width: 117%;
   margin-left: -3em;
   margin-bottom: 2.5em;
+}
+
+@media screen and (max-width: 1112px) {
+  .menuText {
+    display: none;
+  }
+  .menuHeadering {
+    display: none;
+  }
+  .menu ul {
+    margin: 0 0 2em 0;
+    padding: 0;
+  }
+  .new {
+    display: none;
+  }
+  .sideBar {
+    width: 7em;
+  }
 }

@@ -1,0 +1,88 @@
+.accountCard {
+  width: 100%;
+  background: white;
+  padding: 3em;
+  border-radius: 8px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.7em;
+}
+
+.headText {
+  font-size: 1.6rem;
+}
+
+.lineBreak {
+  background: #e1e1e1;
+  height: 0.1rem;
+  margin-bottom: 1em;
+}
+
+.searchRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.branchButton {
+  font-size: 1.4rem;
+  color: #5444f2;
+  background: #f4f3ff;
+  border: 1px solid #f4f3ff;
+  border-radius: 15px;
+  padding: 0.4em 0.8em;
+
+  font-weight: bolder;
+}
+
+.searchButton {
+  width: 23em;
+  height: 2.6em;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  padding-left: 1rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.searchandicon {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: url("../../assets/img/searchIcon.svg");
+    right: 13px;
+    bottom: 7px;
+  }
+}
+
+.settingsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manage {
+  margin-right: 0.7em;
+  color: #5444f2;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.location {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
